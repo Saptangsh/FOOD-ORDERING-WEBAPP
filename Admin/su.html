@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style type="text/css">
+*{
+
+	box-sizing: border-box;
+}
+
+body{
+
+	font-size: 14px;
+	background-color: #f2f2f2;
+}	
+
+.container{
+
+	/*background: white;*/
+	width: 45%;
+	padding: 30px;
+	margin: 70px auto 0;
+	/*box-shadow: 0 0 4px 2px rgba(0,0,0,0.5)*/
+}
+
+.container h1{
+
+	
+	padding: 20px;
+	font-size: 25px;
+	text-align: center;
+	font-style: Brush Script MT (cursive) ;
+}
+
+.input-name{
+
+	width: 100%;
+	height: 40px;
+	position: relative;
+	margin: 20px auto;
+}
+
+.lock{
+
+	padding: 8px 11px;
+
+}
+
+.name{
+
+	padding:  8px 0px 8px 40px;
+}
+
+.input-name span{
+
+	margin-left: 35px;
+}
+
+.input-name i{
+
+	position: absolute;
+	padding: 3px;
+}
+
+.text-name{
+	width: 100%;
+	height: 40px;
+}
+
+.state{
+
+	display: inline-block;
+	width: 85%;
+	height: 25px;
+}
+
+@media (max-width: 800px){
+
+	.a{
+
+		margin-bottom: 50px;
+	}
+@media(min-width: 500px){
+
+	.input-name{
+
+	width: 100%;
+	height: 40px;
+}
+}
+}
+
+</style>
+<body>
+	<div class="container mt-2 ">
+		<!-- <h2 style="font-style: italic;">Registration Form</h2><br> -->
+		<h1 class="text-dark fw-bolder  mb-2" style="font-size: 35px;">Create an Account</h1>
+
+					<div class="fw-normal text-muted mb-2 text-center">
+						Already have an account? <a href="index.html" class="text-primary fw-bold text-decoration-none">Sign in here</a>
+					</div>
+
+                    <div class="text-center text-muted text-uppercase mb-2">or</div>
+
+					<a href="#" class="btn btn-light login_with w-100 mb-4">
+						<img src="google-icon.svg" class="img-fluid me-3">Sign in with Google</a>
+
+	<form  action="u1.php" method="post">
+
+	<div class="row mt-4 input-name a">
+
+
+		<div class="col-md-6 mb-2">
+			<i class="fa fa-user" aria-hidden="true" style="font-size: 20px;"></i>
+			<input type="text" name="" placeholder="           Full Name" class="text-name  " style="height: 45px;" name="t1">
+
+		</div>
+
+		<div class="col-md-6 mb-3 px-0">
+			<i class="fa fa-phone-square" aria-hidden="true" style="font-size: 22px;"></i>
+			<input type="text" name="" placeholder="           Contact Number" class="text-name  " style="height: 45px;" name="t4">
+
+		</div>
+    	
+    </div><br>
+
+			<div class="input-name mt-3 mx-2 row">
+				
+				<i class="fa fa-envelope email" aria-hidden="true" style="font-size: 20px"></i>
+				<input type="text" name="" placeholder="        Email" class="text-name" name="t3">
+				
+			</div>
+
+			<div class="input-name mb-4 mx-2 mt-5">
+				<i class="fa fa-map-marker" aria-hidden="true" style="font-size: 25px"></i>
+				<input type="text" style="height: 60px;" name="" placeholder="        Address" class="text-name" name="t2">
+			</div><br>
+
+			<div class="input-name mx-2 mt-4">
+				<i class="fa fa-id-badge" aria-hidden="true" style="font-size: 25px;"></i>
+				<input type="text"  name="" placeholder="       User-Id" class="text-name" name="t5">
+			</div>
+  			
+  			<div class="input-name mx-2 mt-4">
+				<i class="fa fa-lock" aria-hidden="true" style="font-size: 25px;"></i>
+				<input type="text"  name="" placeholder="       Password" class="text-name" name="t6">
+			</div>
+			
+			<div class="input-name">
+				<input type="radio" class="radio-button" name="r1">
+				<label style="font-size: 18px;">Male</label>
+				<input type="radio" class="radio-button" name="r1">
+				<label style="font-size: 18px;">Female</label>
+			</div>
+
+
+
+			<!-- <div class="input-name">
+				<select class="state">
+					<option>Select State</option>
+					<option>West Bengal</option>
+					<option>Odisha</option>
+					<option>Assam</option>
+					<option>Jharkhand</option>
+					<option>Bihar</option>
+				</select>
+
+			</div>
+ -->
+			<div class="input-name">
+				<!-- <input type="checkbox">
+				<label style="font-size: 17px">I accept the terms and conditions </label><br><br> -->
+
+				<br><div class="form-check d-flex align-items-center">
+                        <input class="form-check-input" type="checkbox" id="gridCheck" checked>
+                        <label class="form-check-label " for="gridCheck">
+                           <span style="font-size: 17px;">I Agree <a href="#">Terms and conditions</a>.</span>
+                        </label>
+                    </div><br>
+				<center><input type="submit" style="background-color: #0b6b2c;width: 40%;border: none;height: 40px;color: white;font-size: 18px;"class="button mt-1" id="btn1"></center>
+			</div>
+
+
+		</form>
+</body>
+</html>
